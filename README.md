@@ -3,5 +3,5 @@
 - [mp3decoder](https://github.com/pschatzmann/arduino-libhelix)
 - [esp32adp](https://github.com/pschatzmann/ESP32-A2DP)
 - [SdFat](https://github.com/greiman/SdFat)
-- [Audio-tools](https://github.com/pschatzmann/arduino-audio-tools)
+- [audio-tools](https://github.com/pschatzmann/arduino-audio-tools)
 - [ArduinoJson](https://github.com/bblanchon/ArduinoJson) 
