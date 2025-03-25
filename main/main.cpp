@@ -19,8 +19,8 @@
 #define CAMERA_MODEL_ESP_EYE 
 #include "camera_pins.h"
 
-const char *ssid = "Admsher";
-const char *password = "peekaboo";
+const char *ssid = "r";
+const char *password = "";
 URLStream url(ssid, password); // Music Stream
 StreamCopy copier; //(i2s, music, 1024); // copy music to i2s
 File file; // final output stream
@@ -49,7 +49,7 @@ bool sd_sign = false;              // Check sd status
 
 
 // Name of the server we want to connect to
-const char kHostname[] = "117.205.13.227";
+const char kHostname[] = "";
 const int kPort = 443;
 
 // Path to download (this is the bit after the hostname in the URL
@@ -84,7 +84,7 @@ void send_photo() {
         Serial.println("Connected to server, sending data...");
 
         client.println("POST /upload1 HTTP/1.1");
-        client.println("Host: 117.205.13.227");
+        client.println("Host: ");
         client.println("Content-Type: application/x-www-form-urlencoded");
         client.println("Content-Length: " + String(encoded.length()));
         client.println();
@@ -108,7 +108,7 @@ void receivedata(void) {
     }
     Serial.println("Fetching..");
     // open music stream
-    url.begin("https://117.205.13.227:443/esp32/audio.mp3");
+    url.begin("https://:443/esp32/audio.mp3");
     Serial.println("Received");
     // copy file
     file = SD.open("audio.mp3", FILE_WRITE);
