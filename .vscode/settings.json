@@ -1,0 +1,22 @@
+{
+    "C_Cpp.intelliSenseEngine": "default",
+    "idf.espIdfPath": "/home/admsher/esp/esp-idf-v5.3",
+    "idf.pythonInstallPath": "/home/admsher/.espressif/python_env/idf5.1_py3.11_env/bin/python",
+    "idf.openOcdConfigs": [
+        "interface/ftdi/esp32_devkitj_v1.cfg",
+        "target/esp32.cfg"
+    ],
+    "idf.toolsPath": "/home/admsher/.espressif",
+    "files.associations": {
+        "*.embeddedhtml": "html",
+        "75_2_dial.h": "c",
+        "radar.h": "c",
+        "79_2_dial.h": "c",
+        "racing.h": "c",
+        "bitset": "cpp",
+        "memory": "cpp",
+        "random": "cpp",
+        "future": "cpp",
+        "optional": "cpp"
+    }
+}
